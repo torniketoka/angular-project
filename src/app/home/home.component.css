@@ -1,0 +1,101 @@
+p {
+  font-family: Lato;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  border:1px solid gray;
+  border-collapse: collapse;
+}
+
+td,th {
+  border:1px solid #ccc;
+  padding:1rem;
+}
+
+.update-container {
+  position: relative;
+  margin-top: 30px;
+  box-shadow: 2px 2px 5px 3px rgba(0, 1, 0, 0.4);
+  width: 436px;
+  height: 90px;
+  padding: 4px 0px 4px 4px;
+  left: 18px;
+}
+
+.updatefirst {
+  margin-right: 34px;
+}
+
+.updatesecond {
+  margin-right: 14px;
+}
+
+.update-button {
+  width: 118px;
+  background-color: #990000;
+  color: white;
+  position: relative;
+  top: 16px;
+}
+
+
+.statusses {
+  float: right;
+  position: relative;
+  bottom: 64px;
+  right: 10px;
+}
+
+.create-container {
+  position: relative;
+  margin-top: 25px;
+  height: 250px;
+  width: 436px;
+  left: 18px;
+  box-shadow: 2px 2px 5px 3px rgba(0, 1, 0, 0.4);
+  padding: 4px 0px 4px 4px;
+}
+
+.lab-1 {
+  margin-right: 40px;
+}
+.lab-2 {
+  margin-right: 45px;
+}
+.lab-3 {
+  margin-right: 22px;
+}
+.lab-4 {
+  margin-right: 58px;
+}
+.lab-5 {
+  margin-right: 52px;
+}
+.lab-6 {
+  margin-right: 15px;
+}
+.lab-7 {
+  margin-right: 4px;
+}
+.lab-8 {
+  margin-right: 52px;
+}
+.lab-9 {
+  margin-right: 63px;
+}
+
+
+.delete-container {
+  position: relative;
+  margin-top: 25px;
+  height: 70px;
+  width: 436px;
+  left: 18px;
+  box-shadow: 2px 2px 5px 3px rgba(0, 1, 0, 0.4);
+  padding: 4px 0px 4px 4px;
+}

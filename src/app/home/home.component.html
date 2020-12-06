@@ -1,0 +1,87 @@
+<div class="card card-block" ccCardHover>MyTodos</div>
+
+<table>
+  <tr>
+    <th *ngFor="let col of columns; let i = index">{{setHeader(col)}}</th>
+  </tr>
+  <tr *ngFor="let item of myTodos">
+    <td *ngFor="let column of columns">{{setData(item[column], column )}}</td>
+  </tr>
+</table>
+
+
+
+<div class="update-container">
+  <div>
+    <label class="updatefirst">please enter id </label>
+    <input type="text" [(ngModel)]="updateStatus.id" />
+  </div>
+  <div>
+    <label class="updatesecond">please enter status</label>
+    <input type="text" [(ngModel)]="updateStatus.status" />
+  </div>
+  <div>
+    <button (click)="updateTODOStatus(updateStatus)" class="update-button">Update Status</button>
+  </div>
+  <div class="statusses">  *statuses
+    <ul>
+      <li>created</li>
+      <li>inProgress</li>
+      <li>done</li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="create-container">
+  <div>
+    <label class="lab-1"> please enter status </label>
+    <input type="text" [(ngModel)]="createToDo.status" disabled />
+  </div>
+  <div>
+    <label class="lab-2">please enter name</label>
+    <input type="text" [(ngModel)]="createToDo.userName" />
+  </div>
+  <div>
+    <label class="lab-3">please enter surname </label>
+    <input type="text" [(ngModel)]="createToDo.userSurname" />
+  </div>
+  <div>
+    <label class="lab-4">please enter age</label>
+    <input type="text" [(ngModel)]="createToDo.userage" />
+  </div>
+  <div>
+    <label class="lab-5">please enter gen </label>
+    <input type="text" [(ngModel)]="createToDo.userGen" />
+  </div>
+  <div>
+    <label class="lab-6">please enter projName</label>
+    <input type="text" [(ngModel)]="createToDo.projName" />
+  </div>
+  <div>
+    <label class="lab-7">please enter description </label>
+    <input type="text" [(ngModel)]="createToDo.projDescription" />
+  </div>
+  <div>
+    <label class="lab-8">please enter date</label>
+    <input type="text" [(ngModel)]="createToDo.deadline" />
+  </div>
+  <div>
+    <label class="lab-9">please enter id </label>
+    <input type="text" [(ngModel)]="createToDo.todoID" />
+  </div>
+  <div>
+    <button (click)="createNewTODO(createToDo)" class="update-button"> Create TODO</button>
+  </div>
+</div>
+
+
+<div class="delete-container">
+  <div>
+    <label class="lab-1"> please enter status </label>
+    <input type="text" [(ngModel)]="deleteByID" />
+  </div>
+  <div>
+    <button (click)="deleteTODOById()" class="update-button"> Delete TODO </button>
+  </div>
+</div>
